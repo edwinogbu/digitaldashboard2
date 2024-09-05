@@ -1,0 +1,217 @@
+/* src/components/SubscriptionPlans.css */
+
+/* General container styling */
+.container {
+    padding: 20px;
+}
+
+/* Headline styles */
+.section-headline {
+    margin-bottom: 30px;
+}
+
+.section-headline h3 {
+    color: #000033;
+    font-size: 26px;
+    line-height: 1.2;
+}
+
+.section-headline h5 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.section-headline p {
+    color: #000033;
+    font-size: 16px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+}
+
+/* Pricing content grid */
+.pricing-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Card styles */
+.card-image-wrapper {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.card-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.pri_table_list {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pri_table_list .base {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.top-price-inner {
+    margin-bottom: 15px;
+}
+
+.rates {
+    font-size: 24px;
+    color: #000033;
+}
+
+.prices {
+    font-weight: bold;
+}
+
+.per-day {
+    display: block;
+    font-size: 16px;
+    color: #888;
+}
+
+.pricing-text {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+}
+
+.pricing-text .check {
+    margin-bottom: 10px;
+}
+
+.price-btn {
+    margin-top: 15px;
+}
+
+.price-btn .blue {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000033;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.price-btn .blue:hover {
+    background-color: #002244;
+}
+
+/* Responsive Styles */
+
+/* Extra Large Devices (Large Desktops) */
+@media (min-width: 1200px) {
+    .section-headline h3 {
+        font-size: 28px;
+    }
+    
+    .section-headline h5 {
+        font-size: 20px;
+    }
+    
+    .section-headline p {
+        font-size: 18px;
+    }
+
+    .pricing-content {
+        gap: 30px;
+    }
+}
+
+/* Large Devices (Desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .section-headline h3 {
+        font-size: 26px;
+    }
+    
+    .section-headline h5 {
+        font-size: 18px;
+    }
+    
+    .section-headline p {
+        font-size: 16px;
+    }
+}
+
+/* Medium Devices (Tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .section-headline h3 {
+        font-size: 22px;
+    }
+    
+    .section-headline h5 {
+        font-size: 16px;
+    }
+    
+    .section-headline p {
+        font-size: 14px;
+    }
+
+    .pricing-content {
+        gap: 15px;
+    }
+
+    .card-image {
+        max-width: 90%;
+    }
+}
+
+/* Small Devices (Phones) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .section-headline h3 {
+        font-size: 20px;
+    }
+    
+    .section-headline h5 {
+        font-size: 14px;
+    }
+    
+    .section-headline p {
+        font-size: 12px;
+    }
+
+    .pricing-content {
+        gap: 10px;
+    }
+}
+
+/* Extra Small Devices (Phones, smaller than 576px) */
+@media (max-width: 575px) {
+    .section-headline h3 {
+        font-size: 18px;
+    }
+    
+    .section-headline h5 {
+        font-size: 12px;
+    }
+    
+    .section-headline p {
+        font-size: 10px;
+    }
+
+    .pricing-content {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .card-image {
+        max-width: 100%;
+    }
+
+    .pri_table_list {
+        padding: 10px;
+    }
+}

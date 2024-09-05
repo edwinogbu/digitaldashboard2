@@ -1,0 +1,243 @@
+/* Mobile First Design */
+.dashboard-deposit-form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    margin: 20px auto;
+    color: #333;
+}
+
+.form-title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #495057;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    background-color: #f8f9fa;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    background-color: #e9ecef;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.file-label {
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #495057;
+}
+
+.form-control-file {
+    font-size: 1rem;
+    padding: 5px;
+    color: #495057;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    background-color: #f8f9fa;
+    transition: border-color 0.3s ease;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Tablet and Above */
+@media (min-width: 768px) {
+    .dashboard-deposit-form {
+        padding: 25px;
+        max-width: 600px;
+    }
+
+    .form-title {
+        font-size: 2rem;
+    }
+
+    .form-control {
+        font-size: 1.1rem;
+    }
+
+    .submit-btn {
+        font-size: 1.3rem;
+    }
+}
+
+/* Desktop and Above */
+@media (min-width: 992px) {
+    .dashboard-deposit-form {
+        padding: 30px;
+        max-width: 700px;
+    }
+
+    .form-title {
+        font-size: 2.2rem;
+    }
+
+    .form-control {
+        font-size: 1.2rem;
+    }
+
+    .submit-btn {
+        font-size: 1.4rem;
+    }
+}
+/* Base styles (Mobile First) */
+.dashboard-deposit-form {
+    background-color: #ffffff;
+    padding: 15px; /* Reduced padding for smaller screens */
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    margin: 10px auto; /* Less margin for smaller screens */
+    color: #333;
+}
+
+.form-title {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1.5rem; /* Reduced font size for smaller screens */
+    color: #333;
+    font-weight: bold;
+}
+
+.form-group {
+    margin-bottom: 10px; /* Reduced margin for compact spacing */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px; /* Reduced label margin */
+    font-weight: 600;
+    font-size: 0.9rem; /* Smaller font for labels */
+    color: #495057;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px; /* Reduced padding */
+    font-size: 0.95rem; /* Slightly smaller font for inputs */
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    background-color: #f8f9fa;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #007bff;
+    background-color: #e9ecef;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.file-label {
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 0.9rem; /* Smaller font for file label */
+    color: #495057;
+}
+
+.form-control-file {
+    font-size: 0.9rem; /* Smaller font for file input */
+    padding: 4px;
+    color: #495057;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    background-color: #f8f9fa;
+    transition: border-color 0.3s ease;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px; /* Reduced padding for button */
+    font-size: 1.1rem; /* Slightly smaller font for button */
+    font-weight: 700;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Tablet and Above */
+@media (min-width: 768px) {
+    .dashboard-deposit-form {
+        padding: 20px;
+        max-width: 600px;
+    }
+
+    .form-title {
+        font-size: 1.8rem;
+    }
+
+    .form-control {
+        font-size: 1rem;
+        padding: 12px;
+    }
+
+    .submit-btn {
+        font-size: 1.2rem;
+    }
+}
+
+/* Desktop and Above */
+@media (min-width: 992px) {
+    .dashboard-deposit-form {
+        padding: 25px;
+        max-width: 700px;
+    }
+
+    .form-title {
+        font-size: 2rem;
+    }
+
+    .form-control {
+        font-size: 1.1rem;
+    }
+
+    .submit-btn {
+        font-size: 1.3rem;
+    }
+}

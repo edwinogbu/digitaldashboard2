@@ -1,0 +1,52 @@
+/* CryptoConverter.css */
+.container {
+    text-align: center;
+    /* margin: 20px; */
+    /* padding: 20px; */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    /* background-color: #f9f9f9; */
+  }
+  
+  .form {
+    display: inline-block;
+    text-align: left;
+  }
+  
+  .inputGroup {
+    margin-bottom: 15px;
+  }
+  
+  .select {
+    padding: 8px;
+    width: 200px;
+  }
+  
+  .input {
+    padding: 8px;
+    width: 192px;
+  }
+  
+  .button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .buttonDisabled {
+    padding: 10px 20px;
+    background-color: #ccc;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: not-allowed;
+  }
+  
+  .result {
+    margin-top: 20px;
+  }
+  

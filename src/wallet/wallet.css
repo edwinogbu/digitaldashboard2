@@ -1,0 +1,325 @@
+/* Wallet.css */
+
+/* General Styles */
+.content {
+    padding: 20px;
+  }
+  
+  .container-fluid {
+    padding: 0 15px;
+  }
+  
+  .row {
+    margin: 0 -15px;
+  }
+  
+  .col {
+    padding: 0 15px;
+  }
+  
+  /* Wallet Header */
+  .wallet-header {
+    background-color: #f8f9fa;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  
+  .wel-come-name h4 {
+    margin: 0;
+  }
+  
+  .welcome-wallet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .bookingrange {
+    display: flex;
+    align-items: center;
+  }
+  
+  .bookingrange img {
+    margin-right: 8px;
+  }
+  
+  .wallet-list a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .wallet-list a span {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Wallet Card */
+  .card-holder {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    width: 100%;
+  }
+  
+  .main-balance-blk {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .main-balance h4 {
+    margin: 0;
+    color: #6c757d;
+  }
+  
+  .main-balance h3 {
+    margin: 0;
+    color: #343a40;
+  }
+  
+  .balance-bit-img img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .card-valid-blk {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .valid-holder p {
+    margin: 0;
+    color: #6c757d;
+  }
+  
+  .valid-holder h5 {
+    margin: 0;
+    color: #343a40;
+  }
+  
+  /* Wallet Widget */
+  .wallet-widget {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    width: 100%;
+  }
+  
+  .circle-bar {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+  }
+  
+  .circle-bar b {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+  }
+  
+  .main-limit p {
+    margin: 0;
+    color: #6c757d;
+  }
+  
+  .main-limit h4 {
+    margin: 0;
+    color: #343a40;
+  }
+  
+  /* Quick Transfer */
+  .transfer-blk {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    width: 100%;
+  }
+  
+  .quick-cont h3 {
+    margin: 0 0 10px;
+    color: #343a40;
+  }
+  
+  .quick-cont p {
+    margin: 0;
+    color: #6c757d;
+  }
+  
+  .bit-coins img {
+    margin-right: 8px;
+  }
+  
+  .form-group {
+    position: relative;
+  }
+  
+  .form-group img {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+  }
+  
+  .form-group .form-control {
+    padding-left: 40px;
+  }
+  
+  .transfer-now-btn .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: #ffffff;
+  }
+  
+  /* Account Security */
+  .account-grp {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    width: 100%;
+  }
+  
+  .security-head h3 {
+    margin: 0 0 20px;
+    color: #343a40;
+  }
+  
+  .security-group {
+    margin-bottom: 20px;
+  }
+  
+  .verification-blk {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .security-box img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .security-name-blk h4 {
+    margin: 0;
+    color: #343a40;
+  }
+  
+  .security-name-blk span {
+    display: block;
+    color: #6c757d;
+  }
+  
+  .material-switch {
+    position: relative;
+  }
+  
+  .material-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .material-switch .badge-active {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 34px;
+    height: 14px;
+    background-color: #ccc;
+    border-radius: 34px;
+  }
+  
+  .material-switch input:checked + .badge-active {
+    background-color: #007bff;
+  }
+  
+  /* Transactions */
+  .buy-form {
+    margin-top: 20px;
+  }
+  
+  .border-watch {
+    padding: 20px;
+    background-color: #f8f9fa;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  
+  .border-watch .watch-head h4 {
+    margin: 0;
+  }
+  
+  .border-watch .trad-book-grp {
+    display: flex;
+    align-items: center;
+  }
+  
+  .border-watch .bookingrange {
+    display: flex;
+    align-items: center;
+  }
+  
+  .border-watch .bookingrange img {
+    margin-right: 8px;
+  }
+  
+  .border-watch .down-range a img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .recent-buy {
+    margin-bottom: 20px;
+  }
+  
+  .recent-buy h3 {
+    margin: 0 0 10px;
+    color: #343a40;
+  }
+  
+  .recent-buy p {
+    margin: 0;
+    color: #6c757d;
+  }
+  
+  .buy-form-crypto {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .border-bottom {
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .transaction-id h4 {
+    margin: 0;
+    color: #343a40;
+  }
+  
+  .bit-amount img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .bit-rate h4 {
+    margin: 0;
+    color: #343a40;
+  }
+  
+  .bit-rate span,
+  .bit-rate p {
+    color: #6c757d;
+  }
+  
