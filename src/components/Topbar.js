@@ -18,7 +18,7 @@ function Topbar({ changeStyle1 }) {
     // const userRole = getRole();
   
   return (
-    <nav className="navbar navbar-expand navbar-light bg-secondary topbar mb-4 static-top shadow">
+    <nav className="navbar navbar-expand navbar-light  topbar mb-4 static-top shadow" style={{backgroundColor:'#f0ee00', color:'#fff'}}>
       {/* Topbar content */}
       <button id="sidebarToggleTop" className="btn btn-link d-md-none rounded-circle mr-3 bg-white"  onClick={changeStyle1}>
         <i className="fa fa-bars"></i>
@@ -27,12 +27,12 @@ function Topbar({ changeStyle1 }) {
                                
         {/*  <!-- Topbar Search --> */}
         <form
-            className="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-            <div className="input-group">
+            className="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search" style={{backgroundColor:'#000033', color:'#fff'}}>
+            <div className="input-group" style={{backgroundColor:'#000033', color:'#fff'}}>
                 <input type="text" className="form-control bg-light border-0 small" placeholder="Search for..."
-                    aria-label="Search" aria-describedby="basic-addon2" />
-                <div className="input-group-append">
-                    <button className="btn btn-primary" type="button">
+                    aria-label="Search" aria-describedby="basic-addon2" style={{backgroundColor:'#000033', color:'#fff'}} />
+                <div className="input-group-append" style={{backgroundColor:'#000033', color:'#fff'}}>
+                    <button className="btn " type="button" style={{backgroundColor:'#000033', color:'#fff'}}>
                         <i className="fas fa-search fa-sm"></i>
                     </button>
                 </div>
@@ -40,17 +40,17 @@ function Topbar({ changeStyle1 }) {
         </form>
 
         {/*  <!-- Topbar Navbar --> */}
-        <ul className="navbar-nav ml-auto bg-primary text-white">
+        <ul className="navbar-nav ml-auto bg-primary text-white" style={{backgroundColor:'#000033', color:'#fff'}}>
 
             {/*  <!-- Nav Item - Search Dropdown (Visible Only XS) --> */}
-            <li className="nav-item dropdown no-arrow d-sm-none">
+            <li className="nav-item dropdown no-arrow d-sm-none" style={{backgroundColor:'#000033', color:'#fff'}}>
                 <Link className="nav-link dropdown-toggle" to="#" id="searchDropdown" role="button"
                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <i className="fas fa-search fa-fw"></i>
                 </Link>
                 {/*   <!-- Dropdown - Messages --> */}
                 <div className="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
-                    aria-labelledby="searchDropdown">
+                    aria-labelledby="searchDropdown" style={{backgroundColor:'#000033', color:'#fff'}}>
                     <form className="form-inline mr-auto w-100 navbar-search">
                         <div className="input-group">
                             <input type="text" className="form-control bg-light border-0 small"
@@ -67,42 +67,35 @@ function Topbar({ changeStyle1 }) {
             </li>
 
             {/*  <!-- Nav Item - Alerts --> */}
-            <li className="nav-item dropdown no-arrow mx-1">
-                <Link className="nav-link dropdown-toggle" to="#" id="alertsDropdown" role="button"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i className="fas fa-bell fa-fw"></i>
-                    <span className="badge badge-danger badge-counter">3+</span>
-                </Link>
-              
-            </li>
+           
 
             {/*  <!-- Nav Item - Messages --> */}
-            <li className="nav-item dropdown no-arrow mx-1  bg-white">
-                <Link className="nav-link dropdown-toggle bg-primary" to="#" id="messagesDropdown" role="button"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <li className="nav-item dropdown no-arrow mx-1  bg-white" style={{backgroundColor:'#000033', color:'#fff'}}>
+                <Link className="nav-link dropdown-toggle " to="#" id="messagesDropdown" role="button"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style={{backgroundColor:'#000033', color:'#fff'}}>
                     <img className="sidebar-card-illustration mb-2" src="./../images/dlogo.png" alt="..." style={{width:60, height:60, borderRadius:50}}/>
 
-                        <Link className="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button">
+                        <Link className="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" style={{backgroundColor:'#000033', color:'#fff'}}>
 
                         {
                          state.isAuthenticated = true ? (
                             <button className='btn btn-outline-light p-1 m-5' onClick={logout}>Sign Out</button>
 
                             ) : (
-                                <p className="text-danger">Please log in to view the dashboard.</p>
+                                <p className="text-danger" style={{backgroundColor:'#000033', color:'#fff'}}>Please log in to view the dashboard.</p>
                             )}
                         </Link>
                 </Link>
                 {/*   <!-- Dropdown - Messages --> */}
                 <div className="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
-                    aria-labelledby="messagesDropdown">
+                    aria-labelledby="messagesDropdown" style={{backgroundColor:'#000033', color:'#fff'}}>
                         
-                    <h6 className="dropdown-header">
+                    <h6 className="dropdown-header" style={{backgroundColor:'#000033', color:'#fff'}}>
                         
                         {state.isAuthenticated = true ? (
                                         <>
                                     
-                                            <p className="card-text">
+                                            <p className="card-text" style={{backgroundColor:'#000033', color:'#fff'}}>
                                                 <strong>Username:
                                                     
                                                     </strong> {user.firstName} {user.lastName}
@@ -114,7 +107,7 @@ function Topbar({ changeStyle1 }) {
                                             </p>
                          )}
                     </h6>
-                    <Link className="dropdown-item d-flex align-items-center" href="#">
+                    <Link className="dropdown-item d-flex align-items-center" to="#" style={{backgroundColor:'#000033', color:'#fff'}}>
                         <div className="dropdown-list-image mr-3">
                             <img className="rounded-circle" src="./../img/undraw_profile_1.svg"
                                 alt="..." />
@@ -124,7 +117,7 @@ function Topbar({ changeStyle1 }) {
                            <button className='btn btn-l btn-close btn-danger' onClick={logout}>Sign Out</button>
                         </div>
                     </Link>
-                    <Link className="dropdown-item d-flex align-items-center" href="#">
+                    <Link className="dropdown-item d-flex align-items-center" href="#" style={{backgroundColor:'#000033', color:'#fff'}}>
                         <div className="dropdown-list-image mr-3">
                             <img className="rounded-circle" src="./../img/undraw_profile_2.svg"
                                 alt="..." />

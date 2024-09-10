@@ -1,0 +1,109 @@
+.container {
+  height: 100%;
+  background-color: #000033;
+  /* background-color: #f9f9f9; */
+}
+
+.card-holder {
+  background-color: #000033;
+  /* color: #fff; */
+  color: #000033;
+  font-size: 14px;
+  line-height: 1.4;
+  border-radius: 10px;
+}
+
+.wallet-widget {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+h5, h6 {
+  font-weight: 600;
+}
+
+.text-primary {
+  color: #f0e000 !important;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.btn {
+  width: 100%;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.btn:hover {
+  background-color: #f0e000;
+  color: #000;
+}
+
+select {
+  background-color: #000033;
+  color: #FFF;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.modal-content {
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-title {
+  font-size: 18px;
+}
+
+.modal-body {
+  padding: 20px;
+}
+
+button[type="submit"] {
+  background-color: #f0e000;
+  color: #000;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+button[type="submit"]:hover {
+  background-color: #ffd700;
+}
+
+
+
+/* Root Variables
+:root {
+    --primary-bg-color: #000033;
+    --primary-text-color: #FFF;
+    --card-bg-color: #000033;
+    --button-bg-color: #000033;
+    --button-text-color: #FFF;
+    --button-border-color: #FFF;
+    --widget-bg-color: #FFF;
+    --widget-text-color: #000033;
+  }
+  
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    font-size: 16px; 
+  } */

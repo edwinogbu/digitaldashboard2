@@ -34,3 +34,53 @@
     width: 0!important;
     overflow: hidden;
 }
+
+
+/* Dashboard.css */
+
+/* Apply to the whole page */
+/* body, #wrapper, #content-wrapper {
+    background-color: #000033;
+    color: #fff;
+  }
+   */
+  /* Topbar styling */
+  .topbar {
+    background-color: #000033;  /* Dark blue background */
+    color: #fff;                /* White text */
+    border-bottom: 1px solid #fff; /* Optional: add a bottom border for separation */
+  }
+  
+  /* Sidebar styling */
+  .sidebar {
+    background-color: #000033;  /* Dark blue background */
+    color: #fff;                /* White text */
+  }
+  
+  /* Ensure that links inside the sidebar and topbar are white */
+  .sidebar a, .topbar a {
+    color: #fff !important;
+  }
+  
+  /* Sidebar toggled state should also reflect the same background and text color */
+  .sidebar.toggled {
+    background-color: #000033;
+    color: #fff;
+  }
+  
+  /* Sidebar accordion buttons and icons */
+  .sidebar .accordion-button, .sidebar .accordion-icon {
+    color: #fff;
+  }
+  
+  /* Topbar icons */
+  .topbar .nav-link, .topbar .icon {
+    color: #fff;
+  }
+  
+  /* Any additional specific styling for links or buttons in the topbar and sidebar */
+  .sidebar .nav-link, .topbar .nav-link {
+    color: #fff !important;
+    background-color: transparent; /* Ensure background doesn't override */
+  }
+  

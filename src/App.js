@@ -42,24 +42,24 @@ const App = () => {
           <Route path={`${dashboardBasePath}/*`} element={<PrivateRoute element={<Dashboard />} />} />
 
           {/* Blog Routes */}
-          <Route path="posts/*" element={<PrivateRoute element={<DashboardHome />} />} />
+          {/* <Route path="posts/*" element={<PrivateRoute element={<DashboardHome />} />} />
           <Route path="posts/*" element={<PrivateRoute element={<Exchange />} />} />
           <Route path="add-post" element={<PrivateRoute element={<MarketCap />} />} />
           <Route path="view-post/:id" element={<PrivateRoute element={<CryptoConverter />} />} />
           <Route path="update-post/:id" element={<PrivateRoute element={<CurrencyConverter />} />} />
           <Route path="update-post/:id" element={<PrivateRoute element={<CrytocurrencyPrices />} />} />
           <Route path="update-post/:id" element={<PrivateRoute element={<CoinDetail />} />} />
-          <Route path="update-post/:id" element={<PrivateRoute element={<Transactions />} />} />
+          <Route path="update-post/:id" element={<PrivateRoute element={<Transactions />} />} /> */}
 
           {/* User Routes */}
-          <Route path="users/*" element={<PrivateRoute element={<Wallet />} />} />
+          {/* <Route path="users/*" element={<PrivateRoute element={<Wallet />} />} />
           <Route path="users/*" element={<PrivateRoute element={<WalletView />} />} />
           <Route path="add-user" element={<PrivateRoute element={<HomeWallet />} />} />
           <Route path="update-user/:id" element={<PrivateRoute element={<CreateAccount />} />} />
-          <Route path="view-user/:id" element={<PrivateRoute element={<RecoverAccount />} />} />
+          <Route path="view-user/:id" element={<PrivateRoute element={<RecoverAccount />} />} /> */}
 
           {/* Fees Routes */}
-          <Route path="fees/*" element={<PrivateRoute element={<UserList />} />} />
+          {/* <Route path="fees/*" element={<PrivateRoute element={<UserList />} />} /> */}
 
   
         </Routes>

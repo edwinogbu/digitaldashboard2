@@ -289,314 +289,18 @@ function Dashboard() {
 
 <div className="row">
   
-          <WalletCard color="bg-primary"  />
+          {/* <WalletCard color="bg-primary"  /> */}
           <div className="mb-4"></div>
           <br></br>
           <br></br>
           <br></br>
           <br></br>
-           <SubscriptionPlans color="bg-primary"/>
-          {/* <WalletCard color="bg-primary" balance="10.57 BTC" validThru="12/24" cardHolder="Edd Great" /> */}
-          {/* <WalletWidget color="bg-secondary" percent="75" limit="500 BTC" label="Credit Limit" /> */}
-          {/* <QuickTransfer btcOptions={btcOptions} quickTransferAction={quickTransferAction} /> */}
-          {/* <AccountSecurity securitySettings={securitySettings} /> */}
-          <Transactions transactions={transactions} />
-          {/* <TransactionApprovalAdmin 
-  pendingTransactions={pendingTransactions} 
-  onUpdateTransaction={(transactionId, newStatus, transaction) => {
-    console.log(`Transaction ${transactionId} updated to ${newStatus}`); */}
 
-  {/* }}
-/> */}
-
-
-<TransactionApprovalAdmin initialTransactions={initialTransactions} />;
-<TestimonialList initialTestimonials={initialTestimonials} />;
-
-<DepositsList deposits={deposits} />
-<DashboardDepositSubscription />
-<DashboardDepositSubscription walletId={1} planId={1} />
-
-<CreateSubscriptionPlan />
-
-<UnApprovedDepositsList />
         </div>
-                                  {/* <div className="row my-2">
-                                    <div className="col-md-6 col-lg-5 col-xl-4">
-                                      <div className="wallet-balance">
-                                        <div className="left-wrapper">
-                                          <div className="left">
-                                            <div className="d-flex align-items-center mb-4">
-                                              <img
-                                                alt=""
-                                                src="./assets/img/crypto/bitcoin.png"
-                                              />
-                                              <span className="font-weight-bold ml-2">
-                                                Bitcoin
-                                              </span>
-                                            </div>
-                                            <span>
-                                              Total Balance
-                                            </span>
-                                            <h2 className="text-white mt-2">
-                                              0.3475948
-                                            </h2>
-                                            <span className="text-primary">
-                                              11,032.24 USD
-                                            </span>
-                                            <div className="d-flex mt-4">
-                                              <button className="btn btn-primary btn-lg mr-2">
-                                                Withdraw
-                                              </button>
-                                              <button className="btn btn-outline-primary btn-lg">
-                                                Deposit
-                                              </button>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    <div className="col-md-6 col-lg-7 col-xl-8">
-                                      <div className="right">
-                                        <div className="py-3">
-                                          <div className="d-flex justify-content-between align-items-end">
-                                            <div className="d-flex flex-column">
-                                              <span>
-                                                Exchange Balance
-                                              </span>
-                                              <span className="font-weight-bold text-white mb-1">
-                                                0.397466349
-                                              </span>
-                                              <span className="text-primary">
-                                                4,897.94 USD
-                                              </span>
-                                            </div>
-                                            <div className="d-flex flex-column align-items-end">
-                                              <img
-                                                alt=""
-                                                src="./assets/img/chart_green_3.png"
-                                              />
-                                              <span className="font-weight-bold small text-white mt-2">
-                                                +3.89%
-                                              </span>
-                                            </div>
-                                          </div>
-                                          <div className="green-bar mt-2">
-                                            <div className="inner" />
-                                          </div>
-                                        </div>
-                                        <div className="py-3">
-                                          <div className="d-flex justify-content-between align-items-end">
-                                            <div className="d-flex flex-column">
-                                              <span>
-                                                Exchange Balance
-                                              </span>
-                                              <span className="font-weight-bold text-white mb-1">
-                                                0.397466349
-                                              </span>
-                                              <span className="text-primary">
-                                                4,897.94 USD
-                                              </span>
-                                            </div>
-                                            <div className="d-flex flex-column align-items-end">
-                                              <img
-                                                alt=""
-                                                src="./assets/img/chart_red_3.png"
-                                              />
-                                              <span className="font-weight-bold small text-white mt-2">
-                                                +3.89%
-                                              </span>
-                                            </div>
-                                          </div>
-                                          <div className="red-bar mt-2">
-                                            <div className="inner" />
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div className="row my-2">
-                                    <div className="col-12">
-                                      <div className="mainchart px-3 py-3">
-                                        <div className="d-flex justify-content-between flex-wrap mb-3">
-                                          <h5 className="mb-0">
-                                            Today's Cryptocurrency Prices
-                                          </h5>
-                                        </div>
-                                        <div className="pb-2 pt-3 price-table">
-                                          <table className="table">
-                                            <thead>
-                                              <tr>
-                                                <th className="font-weight-bold">
-                                                  Asset
-                                                </th>
-                                                <th className="font-weight-bold">
-                                                  On Orders
-                                                </th>
-                                                <th className="font-weight-bold">
-                                                  Available Balance
-                                                </th>
-                                                <th className="font-weight-bold">
-                                                  Total Balances
-                                                </th>
-                                                <th className="font-weight-bold">
-                                                  24H Market
-                                                </th>
-                                              </tr>
-                                            </thead>
-                                            <tbody>
-                                              <tr>
-                                                <td className="d-flex align-items-center">
-                                                  <img
-                                                    alt=""
-                                                    src="./assets/img/crypto/bitcoin.png"
-                                                    className="mr-2"
-                                                  />
-                                                  Bitcoin (BTC)
-                                                </td>
-                                                <td>
-                                                  $326,600
-                                                </td>
-                                                <td>
-                                                  $303,800
-                                                </td>
-                                                <td>
-                                                  $880,423
-                                                </td>
-                                                <td className="text-primary">
-                                                  +2.33%
-                                                </td>
-                                              </tr>
-                                            
-                                            </tbody>
-                                          </table>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div className="row py-2 border-top footer">
-                                    <div className="col-lg-6">
-                                      <span className="text-center text-lg-left d-block w-100">
-                                        Copyright © 2023. All Rights Reserved By{' '}
-                                        <a
-                                          className="text-primary"
-                                          href="#"
-                                        >
-                                          CryptDash
-                                        </a>
-                                      </span>
-                                    </div>
-                                    <div className="col-lg-6">
-                                      <ul className="list-unstyled d-flex gap-2 flex-wrap justify-content-center justify-content-lg-end">
-                                        <li className="mr-2">
-                                          <a href="#">
-                                            Help Center
-                                          </a>
-                                        </li>
-                                        <li className="mr-2">
-                                          <a href="#">
-                                            Privacy
-                                          </a>
-                                        </li>
-                                        <li>
-                                          <a href="#">
-                                            Terms of Service
-                                          </a>
-                                        </li>
-                                      </ul>
-                                    </div>
-                                  </div> */}
+                                 
                               </div>
 
                                 </div>
-
-                                    
-                                    {/*  <!-- Earnings (Monthly) Card Example --> */}
-                                    {/* <div className="col-xl-3 col-md-6 mb-4">
-                                        <div className="card border-left-primary shadow h-100 py-2">
-                                            <div className="card-body">
-                                                <div className="row no-gutters align-items-center">
-                                                    <div className="col mr-2">
-                                                        <div className="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                                            Earnings (Monthly)</div>
-                                                        <div className="h5 mb-0 font-weight-bold text-gray-800">
-                                                         <select>
-                                                            
-                                                         </select>
-                                                        </div>
-                                                    </div>
-                                                    <div className="col-auto">
-                                                        <i className="fas fa-calendar fa-2x text-gray-300"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div> */}
-
-                                    {/*  <!-- Earnings (Monthly) Card Example --> */}
-                                    {/* <div className="col-xl-3 col-md-6 mb-4">
-                                        <div className="card border-left-success shadow h-100 py-2">
-                                            <div className="card-body">
-                                                <div className="row no-gutters align-items-center">
-                                                    <div className="col mr-2">
-                                                        <div className="text-xs font-weight-bold text-success text-uppercase mb-1">
-                                                            Earnings (Annual)</div>
-                                                        <div className="h5 mb-0 font-weight-bold text-gray-800">$215,000</div>
-                                                    </div>
-                                                    <div className="col-auto">
-                                                        <i className="fas fa-dollar-sign fa-2x text-gray-300"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div> */}
-
-                                    {/*  <!-- Earnings (Monthly) Card Example --> */}
-                                    {/* <div className="col-xl-3 col-md-6 mb-4">
-                                        <div className="card border-left-info shadow h-100 py-2">
-                                            <div className="card-body">
-                                                <div className="row no-gutters align-items-center">
-                                                    <div className="col mr-2">
-                                                        <div className="text-xs font-weight-bold text-info text-uppercase mb-1">Tasks
-                                                        </div>
-                                                        <div className="row no-gutters align-items-center">
-                                                            <div className="col-auto">
-                                                                <div className="h5 mb-0 mr-3 font-weight-bold text-gray-800">50%</div>
-                                                            </div>
-                                                            <div className="col">
-                                                                <div className="progress progress-sm mr-2">
-                                                                    <div className="progress-bar bg-info a1" role="progressbar"
-                                                                    ></div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div className="col-auto">
-                                                        <i className="fas fa-clipboard-list fa-2x text-gray-300"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div> */}
-   
-
-                                    {/*  <!-- Pending Requests Card Example --> */}
-                                    {/* <div className="col-xl-3 col-md-6 mb-4">
-                                        <div className="card border-left-warning shadow h-100 py-2">
-                                            <div className="card-body">
-                                                <div className="row no-gutters align-items-center">
-                                                    <div className="col mr-2">
-                                                        <div className="text-xs font-weight-bold text-warning text-uppercase mb-1">
-                                                            Pending Requests</div>
-                                                        <div className="h5 mb-0 font-weight-bold text-gray-800">18</div>
-                                                    </div>
-                                                    <div className="col-auto">
-                                                        <i className="fas fa-comments fa-2x text-gray-300"></i>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div> */}
                                 </div>
 
                                 {/*  <!-- Main Content Row --> */}
@@ -656,6 +360,22 @@ function Dashboard() {
                                 <Route path="/coin/:coinId" element={<CoinDetail />} />
 
                                 <Route path="/unapproved-deposits-investors" element={<UnApprovedDepositsList />}/>
+                                <Route path="/investors-wallet" element={ <WalletCard color="bg-primary"  />}/>
+                                <Route path="/subscription-plan" element={<SubscriptionPlans color="bg-primary"/>}/>
+
+
+                                <Route path="/transaction-admin-approval" element={<TransactionApprovalAdmin initialTransactions={initialTransactions} />}/>
+                                <Route path="/testimonial" element={<TestimonialList initialTestimonials={initialTestimonials} />}/>
+                                 <Route path="/deposits-list" element={<DepositsList deposits={deposits} />}/>
+                                <Route path="/DashboardDepositSubscription" element={<DashboardDepositSubscription />}/>
+                                <Route path="/DashboardDepositSubscription" element={<DashboardDepositSubscription walletId={1} planId={1} />}/>
+                                <Route path="/createSubscriptionPlan" element={<CreateSubscriptionPlan />}/>
+                                <Route path="/transactions" element={<Transactions transactions={transactions} />}/>
+
+
+
+
+
 
                             </>
                           )}
@@ -678,7 +398,7 @@ function Dashboard() {
                         <footer className="sticky-footer bg-white">
                             <div className="container my-auto">
                                 <div className="copyright text-center my-auto">
-                                    <span>Copyright &copy; Your Website 2021</span>
+                                    <span>Copyright &copy; Digital 2025</span>
                                 </div>
                             </div>
                         </footer>

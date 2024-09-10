@@ -16,7 +16,7 @@ const DashboardHeader = () => {
       {/* Page Heading */}
       <div className="row mb-4">
         <div className="col-12 d-flex flex-column flex-md-row align-items-center justify-content-between">
-          <h1 className="h3 mb-3 mb-md-0 text-gray-800">Dashboard</h1>
+          {/* <h1 className="h3 mb-3 mb-md-0 text-gray-800">Dashboard</h1> */}
           <div className="d-flex flex-column flex-md-row align-items-center">
           <div className="row  align-items-center">
             <div className="mb-3 mb-md-0">
