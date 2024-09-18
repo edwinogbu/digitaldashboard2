@@ -275,6 +275,7 @@ const SubscriptionPlans = () => {
                         // border: '2px solid #000033', // Border color and width
                         border: '5px solid #f0e000', // Border color and width
                         borderRadius: '10px',       // Rounded corners
+                        backgroundColor:'#ffffff'
                       }}>
                             {plan.label && <span className="base">{plan.label}</span>}
                             <div className="top-price-inner">
@@ -283,14 +284,14 @@ const SubscriptionPlans = () => {
                                 </div>
                                 <span className="per-day">{plan.duration} Days</span>
                             </div>
-                            <ol className="pricing-text">
+                            <ol className="pricing-text" style={{backgroundColor:'#f0f0ff', color:'#000033', textAlign:'center', borderRadius:1, padding:1,}}>
                                 <li className="check">Minimum Invest: ${plan.minInvest}</li>
                                 <li className="check">Maximum Invest: ${plan.maxInvest}</li>
                                 <li className="check">Average Monthly: {plan.avgMonthly}%</li>
                                 <li className="check">Rate: {plan.rate}%</li>
                             </ol>
                             <div className="price-btn blue">
-                            <Button className="blue" onClick={() => handleDepositClick(plan)}>Deposit</Button>
+                            <Button className="blue" onClick={() => handleDepositClick(plan)}>Invest</Button>
 
                             </div>
                         </div>
@@ -301,7 +302,7 @@ const SubscriptionPlans = () => {
 
             <Modal show={showModal} onHide={handleCloseModal}>
                 <Modal.Header style={{backgroundColor:'#000033', color:'#fff', textAlign:'center'}}>
-                    <Modal.Title style={{ color:'#f0e00c', textAlign:'center'}}>Deposit and Subscribe</Modal.Title>
+                    <Modal.Title style={{ color:'#f0e00c', textAlign:'center'}} className='d-flex justify-content-between align-items-center mb-3'>Deposit and Subscribe</Modal.Title>
                     
                     <Button  className='btn btn-xs col-2' onClick={handleCloseModal}  style={{backgroundColor:'#000033', color:'#fff', textAlign:'center'}}>
                         <FaTimes onClick={handleCloseModal} style={{ color: '#fff' }}>
@@ -309,6 +310,13 @@ const SubscriptionPlans = () => {
                         </FaTimes>
                         
                     </Button>
+                </Modal.Header>
+                <Modal.Header style={{backgroundColor:'#000033', color:'#fff', textAlign:'center'}}>
+                    <br></br>
+                    <div className="justify-content-between align-items-center mb-3">
+                        make payment to the address:jlasdfdf2a3ad033333333qkll then upload prof of payment
+                        </div>
+                   
                 </Modal.Header>
                 <Modal.Body>
                     <Form onSubmit={handleFormSubmit}>

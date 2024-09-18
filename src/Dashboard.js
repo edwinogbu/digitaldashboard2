@@ -32,6 +32,13 @@ import DashboardHeader from './components/DashboardHeader';
 import Topbar from './components/Topbar';
 import Sidebar from './components/Sidebar';
 import UnApprovedDepositsList from './unApprovedDepositsList';
+import UserDashboardHome from './UserDashboardHome';
+import UserWalletHome from './UserWalletHome';
+import ManagePostDeposits from './ManagePostDeposits';
+import ManageBlog from './ManageBlog';
+import ManagePayout from './ManagePayout';
+import InvestorPayoutHistory from './InvestorPayoutHistory';
+import ManageTestimonial from './ManageTestimonial';
 
 
 function Dashboard() {
@@ -39,24 +46,24 @@ function Dashboard() {
   const [seedPhrase, setSeedPhrase] = useState(null);
   const [selectedChain, setSelectedChain] = useState("0x1"); // Fixed state setter name
 
-    const [style, setStyle] = useState("navbar-nav bg-gradient-primary sidebar sidebar-dark accordion");
+    const [style, setStyle] = useState("navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion");
 
     const changeStyle = () => {
-        if (style == "navbar-nav bg-gradient-primary sidebar sidebar-dark accordion")
+        if (style == "navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion")
         {
-            setStyle("navbar-nav bg-gradient-primary sidebar sidebar-dark accordion toggled");
+            setStyle("navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion toggled");
         }
         else{
-            setStyle("navbar-nav bg-gradient-primary sidebar sidebar-dark accordion")
+            setStyle("navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion")
         }
     };
     const changeStyle1 = () => {
-        if (style == "navbar-nav bg-gradient-primary sidebar sidebar-dark accordion")
+        if (style == "navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion")
         {
-            setStyle("navbar-nav bg-gradient-primary sidebar sidebar-dark accordion toggled1");
+            setStyle("navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion toggled1");
         }
         else{
-            setStyle("navbar-nav bg-gradient-primary sidebar sidebar-dark accordion")
+            setStyle("navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion")
         }
     };
 
@@ -187,64 +194,64 @@ function Dashboard() {
   ];
   
 
-  const initialTestimonials = [
-    {
-      id: 1,
-      author: 'John Doe',
-      message: 'This service is fantastic! I am very satisfied.',
-      amount: 1000.00,
-      date: '2024-08-23',
-      status: 'Pending',
-    },
-    {
-      id: 2,
-      author: 'Jane Smith',
-      message: 'Great experience, highly recommend.',
-      amount: 500.00,
-      date: '2024-08-22',
-      status: 'Pending',
-    },
-    {
-      id: 3,
-      author: 'Samuel Green',
-      message: 'Good service, but room for improvement.',
-      amount: 750.00,
-      date: '2024-08-21',
-      status: 'Approved',
-    },
-  ];
+  // const initialTestimonials = [
+  //   {
+  //     id: 1,
+  //     author: 'John Doe',
+  //     message: 'This service is fantastic! I am very satisfied.',
+  //     amount: 1000.00,
+  //     date: '2024-08-23',
+  //     status: 'Pending',
+  //   },
+  //   {
+  //     id: 2,
+  //     author: 'Jane Smith',
+  //     message: 'Great experience, highly recommend.',
+  //     amount: 500.00,
+  //     date: '2024-08-22',
+  //     status: 'Pending',
+  //   },
+  //   {
+  //     id: 3,
+  //     author: 'Samuel Green',
+  //     message: 'Good service, but room for improvement.',
+  //     amount: 750.00,
+  //     date: '2024-08-21',
+  //     status: 'Approved',
+  //   },
+  // ];
   
   
-  const deposits = [
-    { id: 1, name: 'Admond Sayhel', date: '2020-01-02', amount: 1000, currency: 'Bitcoin' },
-    { id: 2, name: 'Jonshon', date: '2019-12-12', amount: 5000, currency: 'USD' },
-    { id: 3, name: 'Hopper', date: '2019-12-22', amount: 4000, currency: 'Ripple' },
-    { id: 4, name: 'Admond Sayhel', date: '2020-01-02', amount: 3000, currency: 'Bitcoin' },
-    { id: 5, name: 'Anjel July', date: '2020-01-05', amount: 500, currency: 'USD' },
-    { id: 6, name: 'Lagisha', date: '2020-01-12', amount: 5000, currency: 'Bitcoin' },
-  ];
+  // const deposits = [
+  //   { id: 1, name: 'Admond Sayhel', date: '2020-01-02', amount: 1000, currency: 'Bitcoin' },
+  //   { id: 2, name: 'Jonshon', date: '2019-12-12', amount: 5000, currency: 'USD' },
+  //   { id: 3, name: 'Hopper', date: '2019-12-22', amount: 4000, currency: 'Ripple' },
+  //   { id: 4, name: 'Admond Sayhel', date: '2020-01-02', amount: 3000, currency: 'Bitcoin' },
+  //   { id: 5, name: 'Anjel July', date: '2020-01-05', amount: 500, currency: 'USD' },
+  //   { id: 6, name: 'Lagisha', date: '2020-01-12', amount: 5000, currency: 'Bitcoin' },
+  // ];
   
   
-  const securitySettings = [
-    {
-      imgSrc: "", // Use icons instead
-      title: "Security Pin",
-      status: "Active",
-      isChecked: true,
-    },
-    {
-      imgSrc: "", // Use icons instead
-      title: "2-step Verification",
-      status: "Inactive",
-      isChecked: false,
-    },
-    {
-      imgSrc: "", // Use icons instead
-      title: "Security Question",
-      status: "Active",
-      isChecked: true,
-    },
-  ];
+  // const securitySettings = [
+  //   {
+  //     imgSrc: "", // Use icons instead
+  //     title: "Security Pin",
+  //     status: "Active",
+  //     isChecked: true,
+  //   },
+  //   {
+  //     imgSrc: "", // Use icons instead
+  //     title: "2-step Verification",
+  //     status: "Inactive",
+  //     isChecked: false,
+  //   },
+  //   {
+  //     imgSrc: "", // Use icons instead
+  //     title: "Security Question",
+  //     status: "Active",
+  //     isChecked: true,
+  //   },
+  // ];
 
 
 
@@ -254,12 +261,9 @@ function Dashboard() {
             <body id="page-top">
 
                 {/*  <!-- Page Wrapper --> */}
-                <div id="wrapper">
+                <div id="wrapper" style={{backgroundColor:'#000033', color:'#fff'}}>
 
                     {/*  <!-- Sidebar --> */}
-
-
-                    
                     <Sidebar  style={ style} changeStyle={changeStyle} />
                     {/*  <!-- End of Sidebar --> */}
 
@@ -345,7 +349,10 @@ function Dashboard() {
                                 />
 
                                 <Route path="/*" element={<DashboardHome />} />
-                                <Route path="/welcome" element={<DashboardHome />} />
+                                <Route path="/home" element={<UserDashboardHome />} />
+                                {/* <Route path="/home" element={<UserWalletHome />} /> */}
+                                <Route path="/user-wallet" element={<UserWalletHome />} />
+                                <Route path="/dashboard" element={<DashboardHome />} />
                                 <Route path="/exchange" element={<Exchange />} />
                                 <Route path="/price" element={<CrytocurrencyPrices />} />
                                 <Route path="/user-list" element={<UserList />} />
@@ -360,20 +367,26 @@ function Dashboard() {
                                 <Route path="/coin/:coinId" element={<CoinDetail />} />
 
                                 <Route path="/unapproved-deposits-investors" element={<UnApprovedDepositsList />}/>
-                                <Route path="/investors-wallet" element={ <WalletCard color="bg-primary"  />}/>
+                                <Route path="/investors-wallet" element={ <UserWalletHome color="bg-primary"  />}/>
                                 <Route path="/subscription-plan" element={<SubscriptionPlans color="bg-primary"/>}/>
 
 
                                 <Route path="/transaction-admin-approval" element={<TransactionApprovalAdmin initialTransactions={initialTransactions} />}/>
-                                <Route path="/testimonial" element={<TestimonialList initialTestimonials={initialTestimonials} />}/>
-                                 <Route path="/deposits-list" element={<DepositsList deposits={deposits} />}/>
+                                {/* <Route path="/manage-testimonials-" element={<TestimonialList />}/> */}
+                                <Route path="/manage-postDeposits" element={<ManagePostDeposits />}/>
+                                <Route path="/manage-blogs" element={<ManageBlog />}/>
+                                <Route path="/manage-payouts" element={<ManagePayout />}/>
+                                <Route path="/manage-InvestorPayoutHistory" element={<InvestorPayoutHistory />}/>
+                                <Route path="/manage-Testimonial" element={<ManageTestimonial />}/>
+                                {/* <Route path="/testimonial" element={<TestimonialList initialTestimonials={initialTestimonials} />}/> */}
+                                 {/* <Route path="/deposits-list" element={<DepositsList deposits={deposits} />}/> */}
                                 <Route path="/DashboardDepositSubscription" element={<DashboardDepositSubscription />}/>
                                 <Route path="/DashboardDepositSubscription" element={<DashboardDepositSubscription walletId={1} planId={1} />}/>
                                 <Route path="/createSubscriptionPlan" element={<CreateSubscriptionPlan />}/>
                                 <Route path="/transactions" element={<Transactions transactions={transactions} />}/>
 
 
-
+                                {/* manage-subscriptionPlans manage-testimonials  manage-posts manage-payouts */}
 
 
 

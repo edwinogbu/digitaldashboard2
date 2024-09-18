@@ -19,12 +19,12 @@ const Sidebar = ({ style, changeStyle }) => {
 
   const isUserRole = userRole === 'user';
   const isAdminRole = userRole === 'admin';
-  const isStaffRole = userRole === 'ROLE_STAFF';
+  // const isStaffRole = userRole === 'ROLE_STAFF';
 
   return (
-    <ul className={style} id="accordionSidebar">
+    <ul className={style} id="accordionSidebar" style={{backgroundColor:'#000033', color:'#fff'}}>
       {/* Sidebar - Brand */}
-      <NavLink className="sidebar-brand d-flex align-items-center justify-content-center" to="#" style={{backgroundColor:'#000033', color:'#fff'}}>
+      <NavLink className="sidebar-brand d-flex align-items-center justify-content-center" to="/dashboard/home" style={{backgroundColor:'#000033', color:'#fff'}}>
         <div className="sidebar-brand-icon rotate-n-15 btn-outline-light" style={{ width: 60, height: 60, borderRadius: 50, border: 2 }}>
           <img className="sidebar-card-illustration mb-2" src="./../images/dlogo.png" alt="..." style={{ width: 60, height: 60, borderRadius: 50, border: 2, borderColor: 'white' }} />
         </div>
@@ -54,18 +54,18 @@ const Sidebar = ({ style, changeStyle }) => {
           {/* <div className="sidebar-heading" style={{backgroundColor:'#000033', color:'#fff'}}>Wallet</div> */}
 
           {/* <li className="nav-item" style={{backgroundColor:'#000033', color:'#fff'}}>
-            <NavLink className="nav-link d-flex gap-2 align-items-center" to="/dashboard/DepositAndWithdrawal">
+            <NavLink className="nav-link d-flex gap-2 align-items-center" to="/dashboard/investors-wallet">
               <span className="material-symbols-outlined fw-lighter">wallet</span>
-              <span className="fw-semibold">DepositAndWithdrawal</span>
+              <span className="fw-semibold">Wallet</span>
             </NavLink>
           </li> */}
 
-          <li className="nav-item"style={{backgroundColor:'#000033', color:'#fff'}}>
+          {/* <li className="nav-item"style={{backgroundColor:'#000033', color:'#fff'}}>
             <NavLink className="nav-link" to="/dashboard/homewallet">
               <i className="fas fa-fw fa-wallet"></i>
               <span>Your Wallet</span>
             </NavLink>
-          </li>
+          </li> */}
 
           {/* User-Specific Navigation Items */}
           {isUserRole && (
@@ -119,18 +119,54 @@ const Sidebar = ({ style, changeStyle }) => {
                 </NavLink>
               </li>
               <li className="nav-item" style={{backgroundColor:'#000033', color:'#fff'}}>
-                <NavLink className="nav-link" to="/dashboard/createSubscriptionPlan">
+                <NavLink className="nav-link" to="/dashboard/manage-subscriptionPlans">
                   <i className="fas fa-fw fa-wallet"></i>
-                  <span>Create Subscription Plan </span>
+                  <span>Manage Subscription Plan </span>
+                </NavLink>
+              </li>
+              <li className="nav-item" style={{backgroundColor:'#000033', color:'#fff'}}>
+                <NavLink className="nav-link" to="/dashboard/manage-Testimonial">
+                  <i className="fas fa-fw fa-wallet"></i>
+                  <span>Manage Testimonial </span>
+                </NavLink>
+              </li>
+              {/* <li className="nav-item" style={{backgroundColor:'#000033', color:'#fff'}}>
+                <NavLink className="nav-link" to="/dashboard/manage-testimonials">
+                  <i className="fas fa-fw fa-wallet"></i>
+                  <span>Manage Testimonials </span>
+                </NavLink>
+              </li> */}
+              <li className="nav-item" style={{backgroundColor:'#000033', color:'#fff'}}>
+                <NavLink className="nav-link" to="/dashboard/manage-postDeposits">
+                  <i className="fas fa-fw fa-wallet"></i>
+                  <span>Manage/PostDeposits </span>
+                </NavLink>
+              </li>
+              <li className="nav-item" style={{backgroundColor:'#000033', color:'#fff'}}>
+                <NavLink className="nav-link" to="/dashboard/manage-blogs">
+                  <i className="fas fa-fw fa-wallet"></i>
+                  <span>Manage Blog Post </span>
+                </NavLink>
+              </li>
+              <li className="nav-item" style={{backgroundColor:'#000033', color:'#fff'}}>
+                <NavLink className="nav-link" to="/dashboard/manage-payouts">
+                  <i className="fas fa-fw fa-wallet"></i>
+                  <span>Manage Payouts </span>
+                </NavLink>
+              </li>
+              <li className="nav-item" style={{backgroundColor:'#000033', color:'#fff'}}>
+                <NavLink className="nav-link" to="/dashboard/manage-InvestorPayoutHistory">
+                  <i className="fas fa-fw fa-wallet"></i>
+                  <span>Manage InvestorPayoutHistory </span>
                 </NavLink>
               </li>
 
-              <li className="nav-item" style={{backgroundColor:'#000033', color:'#fff'}}>
+              {/* <li className="nav-item" style={{backgroundColor:'#000033', color:'#fff'}}>
                 <NavLink className="nav-link" to="/dashboard/recover">
                   <i className="fas fa-fw fa-undo"></i>
                   <span>Recover Account</span>
                 </NavLink>
-              </li>
+              </li> */}
 
               <li className="nav-item" style={{backgroundColor:'#000033', color:'#fff'}}>
                 <NavLink className="nav-link" to="/dashboard/exchange">
@@ -167,12 +203,12 @@ const Sidebar = ({ style, changeStyle }) => {
                 </NavLink>
               </li>
 
-              <li className="nav-item" style={{backgroundColor:'#000033', color:'#fff'}}>
+              {/* <li className="nav-item" style={{backgroundColor:'#000033', color:'#fff'}}>
                 <NavLink className="nav-link" to="/dashboard/wallet">
                   <i className="fas fa-fw fa-wallet"></i>
                   <span>Wallet</span>
                 </NavLink>
-              </li>
+              </li> */}
 
               <li className="nav-item" style={{backgroundColor:'#000033', color:'#fff'}}>
                 <NavLink className="nav-link" to="/dashboard/cryptoexchange">
@@ -181,12 +217,12 @@ const Sidebar = ({ style, changeStyle }) => {
                 </NavLink>
               </li>
 
-              <li className="nav-item" style={{backgroundColor:'#000033', color:'#fff'}}>
+              {/* <li className="nav-item" style={{backgroundColor:'#000033', color:'#fff'}}>
                 <NavLink className="nav-link" to="/dashboard/coin/:coinId">
                   <i className="fas fa-fw fa-info-circle"></i>
                   <span>Coin Detail</span>
                 </NavLink>
-              </li>
+              </li> */}
             </>
           )}
 

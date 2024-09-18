@@ -254,7 +254,9 @@ const UnApprovedDepositsList = () => {
     }
 
     return (
-        <div className="container">
+      <div className="container align-items-center justify-content-center" style={{ height: '100%' }}>
+      <div className="row align-items-center justify-content-center" style={{ height: '100%', backgroundColor:'#000033' }}>
+        <div className="container-fluid">
             <h2 className="text-center my-4" style={{ color: '#f0e00f' }}>Deposit Management</h2>
 
             {error && <Alert variant="danger text-danger">{error}</Alert>}
@@ -288,6 +290,34 @@ const UnApprovedDepositsList = () => {
                                     <td>{deposit.email}</td> {/* Added email */}
                                     <td>
                                         {deposit.status === 'pending' && (
+                                            <div style={{ display: 'flex', gap: '10px' }}>
+                                                <Button
+                                                    variant="success"
+                                                    size="sm"
+                                                    disabled={updating === deposit.id}
+                                                    style={buttonStyle('success')}
+                                                    onClick={() => updateDepositStatus(deposit.id, 'accepted')}
+                                                >
+                                                    {updating === deposit.id ? 'Processing...' : 'Accept'}
+                                                </Button>
+                                                <Button
+                                                    variant="danger"
+                                                    size="sm"
+                                                    disabled={updating === deposit.id}
+                                                    style={buttonStyle('danger')}
+                                                    onClick={() => updateDepositStatus(deposit.id, 'rejected')}
+                                                >
+                                                    {updating === deposit.id ? 'Processing...' : 'Reject'}
+                                                </Button>
+                                            </div>
+                                        )}
+                                        {deposit.status !== 'pending' && (
+                                            <span>{deposit.status === 'accepted' ? 'Accepted' : 'Rejected'}</span>
+                                        )}
+                                    </td>
+
+                                    {/* <td>
+                                        {deposit.status === 'pending' && (
                                             <div>
                                                 <Button
                                                     variant="success"
@@ -312,7 +342,8 @@ const UnApprovedDepositsList = () => {
                                         {deposit.status !== 'pending' && (
                                             <span>{deposit.status === 'accepted' ? 'Accepted' : 'Rejected'}</span>
                                         )}
-                                    </td>
+                                    </td> */}
+
                                 </tr>
                             ))
                         ) : (
@@ -323,6 +354,8 @@ const UnApprovedDepositsList = () => {
                     </tbody>
                 </Table>
             </div>
+        </div>
+        </div>
         </div>
     );
 };

@@ -1,0 +1,107 @@
+.table-custom {
+    background-color: #000033;
+    color: #FFF;
+  }
+  
+  .table-custom th, .table-custom td {
+    text-align: center;
+  }
+  
+  /* .btn-custom {
+    background-color: #000033;
+    color: #FFF;
+    border: none;
+  }
+  
+  .btn-custom:hover {
+    background-color: #FFF;
+    color: #000033;
+  }
+   */
+   /* SweetAlert custom styles */
+.swal-custom {
+  background-color: #000033;
+  color: #FFF;
+  font-weight: bold;
+}
+
+/* Title styling */
+.swal-title {
+  color: #f0e000;
+  font-weight: bold;
+}
+
+/* Styling the select input */
+.swal-input {
+  background-color: #000033; /* Input background */
+  color: #FFF;               /* Input text color */
+  font-weight: 500;
+}
+
+/* Styling for the select dropdown options */
+.swal-input select {
+  background-color: #000033; /* Dropdown background */
+  color: #FFF;               /* Dropdown text color */
+  font-weight: 500;          /* Font weight for options */
+}
+
+/* Styling for individual select options */
+.swal-input option {
+  background-color: #000033; /* Option background */
+  color: #FFF;               /* Option text color */
+}
+
+/* Confirm button styles */
+.swal-confirm {
+  background-color: #f0e000;
+  color: #000033;
+  font-weight: bold;
+}
+
+/* Cancel button styles */
+.swal-cancel {
+  background-color: #d33;
+  color: #FFF;
+  font-weight: bold;
+}
+
+   .button-container {
+    display: flex;
+    justify-content: flex-end; /* Aligns items to the right */
+    margin-bottom: 1rem;
+  }
+  
+  .btn-custom {
+    background-color: #000033;
+    color: #FFF;
+    border: 2px solid #FFF;
+    border-radius: 4px;
+  }
+  
+  .btn-custom:hover {
+    background-color: #FFF;
+    color: #000033;
+    border-color: #000033;
+  }
+  
+  .btn-border {
+    border: 2px solid #FFF;
+    border-radius: 4px;
+  }
+  
+  .actions-cell .btn-group {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .actions-cell .btn-group {
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+  }
+  
+
+
+  

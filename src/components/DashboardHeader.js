@@ -12,29 +12,29 @@ const DashboardHeader = () => {
   };
 
   return (
-    <div className="container-fluid">
+    <div className="container-fluid" style={{backgroundColor:'#000033', color:'#fff'}}>
       {/* Page Heading */}
       <div className="row mb-4">
         <div className="col-12 d-flex flex-column flex-md-row align-items-center justify-content-between">
           {/* <h1 className="h3 mb-3 mb-md-0 text-gray-800">Dashboard</h1> */}
-          <div className="d-flex flex-column flex-md-row align-items-center">
+          <div className="d-flex flex-column flex-md-row align-items-center" style={{backgroundColor:'#000033', color:'#fff'}}>
           <div className="row  align-items-center">
             <div className="mb-3 mb-md-0">
-              <h4 className="btn btn-primary btn-sm shadow-sm p-3 mb-0">
+              <h4 className="btn btn-secondary btn-sm shadow-sm p-3 mb-0">
                 Kindly Use Our Payment Gateway To Make Deposit To Your Wallet:
               </h4>
             </div>
             <br>
             </br>
-            <div className="d-flex align-items-center">
-              <span className="d-inline-block btn btn-light text-primary shadow-sm p-2 me-2">
+            <div className="d-flex align-items-center"style={{backgroundColor:'#000033', color:'#fff'}} >
+              <span className="d-inline-block btn btn-light text-primary shadow-sm p-2 me-2" style={{backgroundColor:'#000033', color:'#fff'}}>
                 {/* <i className="fas fa-download fa-sm text-primary"></i> uhxc3c6cc9b7bebef2ed88a9febc8c7fe29 */}
               </span>
               <button 
                 onClick={() => copyToClipboard("Payment Gateway:uhxc3c6cc9b7bebef2ed88a9febc8c7fe29")} 
                 className="btn btn-outline-primary btn-sm shadow-sm"
               >
-                <CopyOutlined /> Copy to Clipboard : uhxc3c6cc9b7bebef2ed88a9febc8c7fe29
+                <CopyOutlined style={{backgroundColor:'#000033', color:'#fff'}} /> Copy to Clipboard : uhxc3c6cc9b7bebef2ed88a9febc8c7fe29
               </button><CopyOutlined />
             </div>
             </div>
